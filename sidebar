@@ -1,0 +1,19 @@
+<!-- sidebar tall 300x600 banner desktop - repeatable - (lazy loaded) -->
+<div id='windowslatest_com_300x600_sidebar_desktop_repeatable' style="text-align: center;" class="tall_banner_desktop_container">
+    <script type="text/javascript">
+    if(window.innerWidth >= 1141) {
+        (function () {
+            var randomiser = (Math.random() + 1).toString(36).substring(7);
+            var adID = document.querySelector('#windowslatest_com_300x600_sidebar_desktop_repeatable').id = "windowslatest_com_300x600_sidebar_desktop_repeatable-" + randomiser;
+            
+            inView('#' + adID).once('enter', (function() {
+                googletag.cmd.push(function() {
+                    googletag.defineSlot('/147246189,43628730/windowslatest.com_300x600_sidebar_desktop_repeatable', [[300,600],[160,600],[300,250],[250,250]], adID).addService(googletag.pubads());
+                    googletag.display(adID);
+                    stpd.initializeAdUnit(adID);
+                });
+            }));
+        })();
+    }
+    </script>
+</div>
